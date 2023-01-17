@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Common Pixel', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url(./images/background.png);
+}
+
+header {
+  background-color: #3b3a34;
+  box-shadow:   -10px 0 0 0 #252525,
+  10px 0 0 0 #252525,
+  0 -10px 0 0 #252525,
+  0 10px 0 0 #252525,
+  inset -4px 2px 1px 1px grey,
+  inset -4px -2px 1px 1px lightgray,
+  inset 4px 0px 1px 1px lightgray; 
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.5rem 1rem 4rem 1rem ;
+}
+h1{
+  color: #626058;
+  font-size: 2.5rem;
+}
+h1, h2 {
+  text-shadow: 2px 2px 0px #9d9382, 4px 4px 0px #0000004e;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #252525;
+}
+
+section {
+  width: 90%;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.healthbar {
+  background: rgb(172, 172, 172);
+  box-shadow:   -5px 0 0 0 black,
+  5px 0 0 0 black,
+  0 -5px 0 0 black,
+  0 5px 0 0 black,
+  inset -4px 2px 1px 1px grey,
+  inset -4px -2px 1px 1px lightgray,
+  inset 4px 0px 1px 1px lightgray; 
+  width: 100%;
+  height: 40px;
+  margin: 2em auto;
+}
+
+.healthbar__value {
+  background-color: #00a876;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: #766e60;
+  color: #3b3a34;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  margin: 2em auto;
+  box-shadow:   -10px 0 0 0 #252525,
+  10px 0 0 0 #252525,
+  0 -10px 0 0 #252525,
+  0 10px 0 0 #252525,
+  inset -4px 2px 1px 1px grey,
+  inset -4px -2px 1px 1px lightgray,
+  inset 4px 0px 1px 1px lightgray; 
+}
+
+#monster h2,
+#player h2 {
+  margin: 0.25rem;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+button {
+  font-size: 1em;
+  font-family: 'Common Pixel', sans-serif;
+  height: 2rem;
+  background: #3b3a34;
+  color: #766e60;
+  border: 0px;
+  position: relative;
+  box-shadow: 
+    inset -4px 2px 1px 1px grey,
+    inset -4px -2px 1px 1px lightgray,
+    inset 4px 0px 1px 1px lightgray; 
+    margin: 1rem;
+    width: 12rem;
+}
+button:hover{
+  cursor: pointer;
+	background-color: #292925;
+}
+
+button:active {
+  top: 5px;
+  box-shadow: 
+    -4px 2px 1px 1px grey,
+    -4px -2px 1px 1px lightgray,
+    4px 0px 1px 1px lightgray; 
+}
+
+button::before {
+  content: '';
+  background: black;
+  position: absolute;
+  left: 0;
+  top: -5%;
+  width: 100%;
+  height: 113%;
+  z-index: -1;
+}
+
+button::after {
+  content: '';
+  background: black;
+  position: absolute;
+  left: -2.5%;
+  top: 0;
+  width: 105%;
+  height: 100%;
+  z-index: -1;
+}
+
+button:disabled {
+  background: #252525;
+  color: #6d6c6c;
+  cursor: not-allowed;
+}
+
+
+#log ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#log li {
+  margin: 0.5rem 0;
+}
+
+.log--player {
+  color: #044f00;
+}
+
+.log--monster {
+  color: #690000;
+}
+
+.log--damage {
+  color: red;
+}
+
+.log--heal {
+  color: green;
+}
