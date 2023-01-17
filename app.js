@@ -51,6 +51,7 @@ methods: {
         this.monsterHP = 100;
         this.winner = null;
         this.currentRound = 0;
+        this.logMesseges = [];
     },
     attackMonster() {
       this.currentRound++;
